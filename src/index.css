@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  /* Typography Scale */
+  --font-display: "Playfair Display", Georgia, serif;
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  
+  /* Spacing */
+  --container-max: 1140px;
+  --section-padding: 6rem;
+  --section-padding-mobile: 4rem;
+
+  /* Light Theme Colors (default) */
+  --color-background: #FAFAFA;
+  --color-surface: #FFFFFF;
+  --color-text-primary: #111111;
+  --color-text-secondary: #666666;
+  --color-text-tertiary: #999999;
+  --color-border: #E5E5E5;
+  --color-border-light: #F0F0F0;
+  --color-accent: #2563EB;
+  --color-accent-hover: #1D4ED8;
+}
+
+/* Dark Theme */
+.dark {
+  --color-background: #0A0A0A;
+  --color-surface: #141414;
+  --color-text-primary: #FAFAFA;
+  --color-text-secondary: #A1A1A1;
+  --color-text-tertiary: #737373;
+  --color-border: #262626;
+  --color-border-light: #1A1A1A;
+  --color-accent: #3B82F6;
+  --color-accent-hover: #60A5FA;
+}
+
+/* Base Styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background-color: var(--color-background);
+  color: var(--color-text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-width: 320px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Selection */
+::selection {
+  background-color: var(--color-accent);
+  color: white;
+}
+
+/* Focus States */
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+/* Smooth image loading */
+img {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
