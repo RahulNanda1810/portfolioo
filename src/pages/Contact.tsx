@@ -11,8 +11,8 @@ const Contact = () => {
         </svg>
       ),
       title: 'Email',
-      value: 'hello@rahulnanda.dev',
-      href: 'mailto:hello@rahulnanda.dev',
+      value: 'rahulnanda.nj@gmail.com',
+      href: 'mailto:rahulnanda.nj@gmail.com',
       description: 'For project inquiries and collaborations',
     },
     {
@@ -22,8 +22,8 @@ const Contact = () => {
         </svg>
       ),
       title: 'LinkedIn',
-      value: 'linkedin.com/in/rahulnanda',
-      href: 'https://linkedin.com/in/rahulnanda',
+      value: 'linkedin.com/in/rahulnanda-nj',
+      href: 'https://www.linkedin.com/in/rahulnanda-nj',
       description: 'Let\'s connect professionally',
     },
     {
@@ -33,8 +33,8 @@ const Contact = () => {
         </svg>
       ),
       title: 'GitHub',
-      value: 'github.com/rahulnanda',
-      href: 'https://github.com/rahulnanda',
+      value: 'github.com/RahulNanda1810',
+      href: 'https://github.com/RahulNanda1810',
       description: 'Check out my code and projects',
     },
   ];
